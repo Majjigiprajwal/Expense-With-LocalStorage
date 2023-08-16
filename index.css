@@ -1,0 +1,12 @@
+body{
+    margin:auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+#lists{
+    display: flex;
+    flex-direction:row;
+}
+

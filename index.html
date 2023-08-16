@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Expense Tracker With Local  Strorage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label for="Amount">Expense Amount</label>
+                  <input type="text" class="form-control" id="Amount"  onchange="handleChange(event) ">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="Description">Expense Description</label>
+                  <input type="text" class="form-control" id="Description" required onchange="handleChange(event)" >
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="Category">Choose Category</label>
+                    <select id="Category" class="form-control" required onchange="handleChange(event)">
+                      <option selected>Choose...</option>
+                      <option>Movie</option>
+                      <option>Food</option>
+                      <option>Books</option>
+                      <option>Clothes</option>
+                      <option>Rent</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn btn-primary mb-3 m-4" id="AddExpense">Add Expense</button>
+                  </div>
+              </div> 
+              <div>
+              <ul class="list-group" id="expenseList">
+                
+              </ul>
+            </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
